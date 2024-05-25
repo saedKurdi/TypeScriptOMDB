@@ -1,0 +1,81 @@
+.main {
+  padding: 15px 25px;
+  display: flex;
+  background-color: black;
+  text-align: center;
+
+  &__menu {
+    top: 90px;
+    background-color: $main-black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 10px;
+    list-style: none;
+    border: 3px solid gray;
+    border-radius: 10px;
+  }
+
+  &__menu-text {
+    color: gray;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+
+  &__films {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-top: 75px;
+    gap: 10px;
+    margin-left: 200px;
+  }
+
+  &__film {
+    border-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+
+    & img {
+      border-radius: 14px;
+    }
+  }
+
+  $black-color: 0, 0, 0;
+  $transparency: 0.6;
+
+  &__film-info {
+    padding: 10px;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(30, 30, 30);
+    border-radius: 15px;
+
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  &__film-text-container {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    margin-left: 60px;
+  }
+}
+
+.fa-regular {
+  cursor: pointer;
+}

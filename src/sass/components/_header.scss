@@ -1,0 +1,96 @@
+@import "../../sass/utils/variables";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  padding: 20px 0px;
+  width: 100vw;
+  background-color: $main-black;
+
+  &__container {
+    display: flex;
+    gap: 100px;
+    margin-right: auto;
+  }
+
+  &__logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 1px;
+    color: $main-orange;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__select-type {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__select-item {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__button-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 15px;
+  }
+
+  &__button {
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-weight: 450;
+    cursor: pointer;
+  }
+
+  &__search {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__createacc-button {
+    border: 0px;
+    background-color: $main-orange;
+    color: $main-black;
+  }
+
+  &__signup-button {
+    background-color: $main-black;
+    color: $main-orange;
+  }
+}
+
+.select-item__icon {
+  color: gray;
+}
+
+.select-item__text {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.select-item__input {
+  background-color: transparent;
+  border: 0;
+  color: gray;
+  width: 140px;
+}
